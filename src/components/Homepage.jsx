@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import ConfigField from "./ConfigField";
 import Screen from "./Screen";
+import "./Homepage.css"
 
 function Homepage() {
 
@@ -15,7 +16,7 @@ function Homepage() {
     return (
         <div className="App">
             <ConfigField function={handleConfigUpdate}/>
-            <Screen />
+            <Screen time={time} speed={speed}/>
         </div>
     )
 }
